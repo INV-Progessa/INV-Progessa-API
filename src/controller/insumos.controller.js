@@ -46,7 +46,7 @@ exports.actualizarInsumo = async (req, res) => {
 };
 
 // Función para listar insumos
-exports.listarInsumos = async (res) => {
+exports.listarInsumos = async (req, res) => {
   try {
     // Ejecutar la consulta para listar insumos
     const result = await client.query(`
